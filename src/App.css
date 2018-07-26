@@ -1,0 +1,244 @@
+.adp-appbar{
+    height: 70px;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.06), 0 10px 20px 0 rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background: #ffffff;
+    width: calc(100% - 100px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.adp-appbar p {
+    padding: 0;
+    margin: 0;
+}
+
+.adp-appbar__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adp-appbar__right-avatar{
+    height:50px;
+    margin-right: 10px;
+}
+
+.adp-appbar__right__avatar__content-name{
+    color: #272727;
+    font-size: 16px;
+}
+
+.adp-appbar__right__avatar__content-role{
+    opacity: 0.5;
+    color: #272727;
+    font-size: 13px;
+}
+
+.adp-appbar__right-dropdown{
+    height: 0px;
+    width: 0px;
+    margin-left: 20px;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.app-container {
+    background: #F6F7FA;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 70px;
+    z-index: 0;
+    height: calc(100% - 70px);
+    width: 100%;
+}
+
+.adp-sidebar {
+    background: #fff;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.06), 0 10px 20px 0 rgba(0,0,0,0.05);
+    z-index: 2;
+    height: 100%;
+    width: 212px;
+    position: fixed;
+}
+
+.adp-sidebar ul{
+    margin: 25px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.adp-sidebar li{
+    padding: 20px 33px;
+    opacity: 0.5;
+    color: #1D1D1D;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.adp-sidebar a{
+    text-decoration: none;
+}
+
+.adp-sidebar a.active li{
+    color: #4776E6;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.adp-sidebar a.active li{
+    background-color: rgba(71, 118, 230, .05);
+    box-shadow: 0 3px 6px 0 rgba(71,118,230,0.23), 0 3px 6px 0 rgba(71,118,230,0.16);
+    position: relative;
+}
+
+.adp-sidebar a.active li::before{
+    border-left: 8px solid #4776E6;
+    border-radius: 0 34px 34px 0;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.app-container__content{
+    width: calc(100% - 252px);
+    height: calc(100% - 40px);
+    position: relative;
+    left: 212px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.campaignType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campaignType .line{
+    width: 70%;
+    color: #343434;
+    opacity: 0.2;
+}
+
+.campaignType p{
+    color: #272727;
+    font-size: 18px;
+}
+
+.campaignType input[type="button"]{
+    color: #fff;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 34px;
+    background-color: #4776E6;	
+    box-shadow: 0 3px 6px 0 rgba(71,118,230,0.23), 0 3px 6px 0 rgba(71,118,230,0.16);
+}
+
+.campaignList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.campaign{
+    width: calc(33.333% - 10px);
+    padding: 10px 5px;
+    position: relative;
+}
+
+.campaignImage{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.campaignImage img{
+    width: 100%;
+    box-shadow: 0px 1px 5px 0px rgba(161,158,161,.5);
+    border-radius: 20px;
+}
+
+.campaignContent{
+    position: absolute;
+    top: 65%;
+    border-radius: 0 0 19px 19px;
+    background-color: rgba(255, 255, 255, .9);
+    width: calc(100% - 20px);
+    bottom: 4px;
+    padding: 10px;
+}
+
+.campaignTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaignTitle p{
+    color: #343434;
+    font-size: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+.campaignTitle p.overflow{
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+}
+
+.campaignTitle p.ellipsis{
+    text-overflow: ellipsis;
+}
+
+.campaignDesc{
+    color: #343434;
+    font-size: 10px;
+    margin: 0px 0px 7px 0px;
+}
+
+.campaignDesc span{
+    opacity: 0.5;
+    color: #343434;
+    font-size: 10px;
+}
+
+.campaignTitle span.deactive:before {
+    content: "";
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #E64747;
+    position: absolute;
+    right: 10px;
+}
+
+.campaignTitle span.active:before {
+    content: "";
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #42C25D;
+    position: absolute;
+    right: 10px;
+}
+
+.campaignTitle span.disabled:before {
+    content: "";
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #B2B4B6;
+    position: absolute;
+    right: 10px;
+}
