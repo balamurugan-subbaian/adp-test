@@ -22,12 +22,16 @@
     "redux-responsive": "^4.3.5",
     "redux-saga": "^0.16.0",
     "styled-components": "^3.0.2",
-    "url-search-params-polyfill": "^4.0.0"
+    "url-search-params-polyfill": "^4.0.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
